@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BuscaCole - Encuentra colegios por zona</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Color de fondo */
+    }
+
+    /* Estilos para el encabezado */
+    header {
+      background-color: #ff6600; /* Color naranja del logo */
+      color: #fff; /* Texto en blanco */
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Estilos para el menú */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #ff3333; /* Color rojo del logo */
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #33cc33; /* Color verde del logo */
+    }
+
+    nav ul ul li {
+      display: block;
+    }
+
+    /* Estilos para el contenido principal */
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para el formulario de inicio de sesión */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+      background-color: #ff6600; /* Color naranja del logo */
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BuscaCole</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Buscar Colegios</a></li>
+      <li>
+        <a href="#">Acceso</a>
+        <ul>
+          <li><a href="#">Iniciar Sesión</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post">
+      <input type="text" name="usuario" placeholder="Usuario o Correo Electrónico" required>
+      <input type="password" name="contrasena" placeholder="Contraseña" required>
+      <input type="submit" value="Iniciar Sesión">
+    </form>
+  </div>
+
+  <!-- Otro contenido de la página iría aquí -->
+
+</body>
+</html>
